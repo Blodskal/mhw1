@@ -1,0 +1,191 @@
+body {
+    background-color: #deb887;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-style: normal;
+    font-size: 18px;
+}
+
+#menu {
+    background-color:#3636363f;
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70%;
+    position: relative;
+}
+
+#menu a {
+    color: #1b1b1b;
+    background-color: hsl(34, 57%, 70%);
+    border-radius: 1.5%;
+    padding: .1% 2%;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    font-style: italic;
+    background-color: #473d8b8e;
+    color: #f0f0f0;    
+}
+
+
+#overlaybg{
+    display: flex;
+    justify-content: center;
+    background: url("tv1l.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 0 1000px rgb(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+#pagetitle {
+    line-height:5em;
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Bebas Neue', sans-serif;
+    color: goldenrod;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1% auto;
+    background-color: #14141421;
+}
+
+.flex-item {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 1.5%;
+    background: linear-gradient(#deb887, #14141400);
+}
+
+.gametitle {
+    background-color: #473d8b8e;
+    color: burlywood;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 150%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.image img {
+    float: left;
+    border-radius: 1.5%;
+    width: auto;
+    height: 40vh;
+    margin-right: 2%;
+}
+
+.flex-item p {
+    background-color: #1b1b1b2d;
+    border-radius: 1.5%;
+    width: auto;
+    height: 33vh;    
+    padding: inherit;
+    text-align: justify;
+    font-family: Tahoma, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color: #1b1b1b;
+    overflow-y: scroll;
+}
+
+.flex-item p > em {
+    font-weight: 600;
+    font-style: normal;
+    color: #473d8b;
+}
+
+.flex-item p > a:hover {
+    font-style: italic;
+    text-decoration: none;
+    background-color: #473d8b8e;
+    color: #f0f0f0;
+}
+
+footer {
+    position: relative;
+    padding: 1% 2%;
+    text-align: justify;
+    font-weight:300;
+    font-family: sans-serif;
+    font-size: .8em;
+    line-height: 1em;
+    background-color: #473d8b8e;
+    color: #1b1b1b;
+}
+
+#credits {
+    font-size: 80%;
+}
+
+footer a {
+    font-style: italic;
+    font-weight: 500;
+    color: #1b1b1b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1b1b1b;
+    background-color: burlywood;
+}
+
+footer em {
+    font-weight: bold;
+}
+
+@media (max-width:991px) {
+    body {
+        font-size: 14px;
+    }
+
+    #menu {
+        font-size: 80%;
+    }
+
+    #overlaybg {
+        background: url("tv1.png");
+        background-position: center;
+        background-size:cover;
+    }
+
+    #pagetitle {
+        line-height: 3em;
+    }
+
+    .image img {
+        width: 95%;
+        height: auto;
+        float: none;
+        margin: auto;
+    }
+
+    .flex-item p {
+        float: none;
+        margin: auto;
+        width: 95%;
+        height: 35vw;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+}
